@@ -11,5 +11,7 @@ $val += 4;
 echo $val . "<br>";
 $myBool = true;
 echo $myBool . "<br>";
+$myBool = false;
+echo $myBool . "<br>";
 
 ?>
