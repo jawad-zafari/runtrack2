@@ -36,3 +36,4 @@ echo "<table border='1'>
             </tr>
         </tbody>
       </table>";
+      ?>
