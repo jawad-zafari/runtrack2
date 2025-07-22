@@ -9,7 +9,7 @@ echo "<table border='1'>
         <thead>
             <tr>
                 <th>Type</th>
-                <th>Name</th>
+                <th>Nom</th>
                 <th>Value</th>
             </tr>
         </thead>
