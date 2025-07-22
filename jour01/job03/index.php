@@ -17,7 +17,7 @@ echo "<table border='1'>
             <tr>
                 <td>Boolean</td>
                 <td>booleanVar</td>
-                <td>" . ($booleanVar ? 'true' : 'false') . "</td>
+                 <td>$booleanVar</td>
             </tr>
             <tr>
                 <td>Integer</td>
