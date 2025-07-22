@@ -15,25 +15,24 @@ echo "<table border='1'>
         </thead>
         <tbody>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Boolean</td>
+                <td>booleanVar</td>
+                <td>" . ($booleanVar ? 'true' : 'false') . "</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Integer</td>
+                <td>integerVar</td>
+                <td>$integerVar</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>String</td>
+                <td>stringVar</td>
+                <td>$stringVar</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Float</td>
+                <td>floatVar</td>
+                <td>$floatVar</td>
             </tr>
         </tbody>
       </table>";
-?>
