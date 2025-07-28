@@ -14,8 +14,8 @@ for ($i = 0; $i < strlen($str); $i++) {
 <table border="1">
     <thead>
         <tr>
-    <th>Lettres consonnes</th>
-    <th>Lettres voyelles</th>
+    <th>Les consonnes</th>
+    <th>Les voyelles</th>
         </tr>
     </thead>
     <tbody>
