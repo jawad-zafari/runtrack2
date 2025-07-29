@@ -4,8 +4,8 @@ if (!empty($_GET)) {
     echo '<tr><th>Argument</th><th>Valeur</th></tr>';
     foreach ($_GET as $key => $value) {
         echo '<tr>';
-        echo '<td>' . htmlspecialchars($key) . '</td>';
-        echo '<td>' . htmlspecialchars($value) . '</td>';
+        echo '<td>' .$key.'</td>';
+        echo '<td>' .$value.'</td>';
         echo '</tr>';
     }
     echo '</table>';
