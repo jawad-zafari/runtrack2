@@ -10,4 +10,3 @@ else { echo "« Aucun paramètre GET n'a été envoyé. »";}
   <input type="text" name="nom" placeholder="Nom">
   <input type="submit" value="Envoyer">
 </form>
- n
