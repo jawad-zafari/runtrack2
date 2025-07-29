@@ -5,3 +5,8 @@ if(isset($_POST)) {
   } 
 else { echo "« Aucun paramètre GET n'a été envoyé. »";}
 ?>
+<form method="POST" action="">
+  <input type="text" name="prenom" placeholder="Prénom">
+  <input type="text" name="nom" placeholder="Nom">
+  <input type="submit" value="Envoyer">
+</form>
