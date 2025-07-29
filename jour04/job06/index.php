@@ -1,19 +1,14 @@
 <?php
 if (isset($_GET['nombre'])) {
-    $nombre = $_GET['nombre'];
-    if (is_numeric($nombre)) {
-        if ($nombre % 2 == 0) {
-            echo 'Nombre pair';
-        } else {
-            echo 'Nombre impair';
-        }
+    if ($_GET['nombre'] % 2 == 0) {
+        echo 'Nombre pair';
     } else {
-        echo 'Veuillez entrer un nombre valide';
+        echo 'Nombre impair';
     }
 }
 ?>
 
-<form method="GET" action="">
-  <input type="text" name="nombre" placeholder="Entrez un nombre">
+<form method="GET">
+  <input type="number" name="nombre" placeholder="Entrez un nombre" required>
   <input type="submit" value="Vérifier">
 </form>
