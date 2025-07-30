@@ -4,3 +4,7 @@ if (isset($_GET['nombre'])) {
     else {echo 'Nombre impair';}
 }
 ?>
+<form method="GET">
+  <input type="number" name="nombre" placeholder="Entrez un nombre" required>
+  <input type="submit" value="Vérifier">
+</form>
