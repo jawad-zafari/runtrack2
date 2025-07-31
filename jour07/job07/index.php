@@ -44,3 +44,23 @@ function plateforme($str) {
     }
     return $result;
 }
+// Traitement des formulaires
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $str = $_POST['str'] ?? '';
+    $fonction = $_POST['fonction'] ?? '';
+    
+    $result = "";
+    switch ($fonction) {
+        case 'gras':
+            $result = gras($str);
+            break;
+        case 'cesar':
+            $result = cesar($str);
+            break;
+        case 'plateforme':
+            $result = plateforme($str);
+            break;
+    }
+}
+?>
+
