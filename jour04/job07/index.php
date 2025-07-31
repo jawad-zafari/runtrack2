@@ -21,4 +21,8 @@
         $largeur = (int)$_POST['largeur'];
         $hauteur = (int)$_POST['hauteur'];
 
-     
+      // Valider les entrées
+        if ($largeur <= 0 || $hauteur <= 0) {
+            echo "<p>Les valeurs doivent être positives !</p>";
+        } else {
+            
