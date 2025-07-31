@@ -16,4 +16,7 @@ function calcule($a, $operation, $b) {
     }
 }
 
-
+// test
+echo calcule(5, '+', 3);  // 8
+echo calcule(10, '/', 2); // 5
+?>
