@@ -64,3 +64,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job 07</title>
+</head>
+<body>
+    <form method="post">
+        <input type="text" name="str" placeholder="Entrez votre texte">
+        <select name="fonction">
+            <option value="gras">Gras</option>
+            <option value="cesar">Cesar</option>
+            <option value="plateforme">Plateforme</option>
+        </select>
+        <button type="submit">Valider</button>
+    </form>
+    
+    <?php if (isset($result)): ?>
+        <div>Résultat: <?php echo $result; ?></div>
+    <?php endif; ?>
+</body>
+</html>
