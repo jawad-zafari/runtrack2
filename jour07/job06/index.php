@@ -18,3 +18,6 @@ function leetSpeak($str) {
     return $result;
 }
 
+// test
+echo leetSpeak("Hello World"); // H3110 W0r1d
+?>
