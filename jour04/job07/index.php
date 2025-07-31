@@ -25,4 +25,20 @@
         if ($largeur <= 0 || $hauteur <= 0) {
             echo "<p>Les valeurs doivent être positives !</p>";
         } else {
+            // Pour s'afficher correctement dans le navigateur
+            echo "<pre>"; 
+            // Dessine le toit (triangle)
+            $roof_height = ceil($largeur / 1.965); // Hauteur du plafond en fonction de la largeur
+            for ($i = 0; $i < $roof_height; $i++) {
+            // distance à partir de la gauche
+                echo str_repeat(" ", $roof_height - $i - 1);
+               // Côté gauche du toit
+                echo "/";
+               // Intérieur du toit
+                echo str_repeat("_", $i * 2);
+                // Côté droit du toit
+                echo "\\";
+                echo "\n";
+            }
+
             
