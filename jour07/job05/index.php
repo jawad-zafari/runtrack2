@@ -8,3 +8,5 @@ function occurrences($str, $char) {
     }
     return $count;
 }
+echo occurrences("Bonjour", "o"); // 2
+?>
