@@ -41,4 +41,21 @@
                 echo "\n";
             }
 
-            
+            // Dessiner un corps rectangulaire
+        for ($i = 0; $i < $hauteur; $i++) {
+            if ($i == $hauteur - 1) {
+            // Dernière ligne du corps avec _
+                echo "|" . str_repeat("_", $largeur) . "|";
+            } else {
+            // Les autres lignes du corps sont vides
+                echo "|" . str_repeat(" ", $largeur) . "|";
+            }
+            echo "\n";
+        }
+
+        echo "</pre>";
+    }
+}
+    ?>
+</body>
+</html>
