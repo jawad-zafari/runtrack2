@@ -16,4 +16,9 @@
         <input type="submit" value="Dessiner">
     </form>
 
-    
+    <?php
+    if (isset($_POST['largeur']) && isset($_POST['hauteur'])) {
+        $largeur = (int)$_POST['largeur'];
+        $hauteur = (int)$_POST['hauteur'];
+
+     
