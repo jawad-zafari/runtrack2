@@ -23,4 +23,4 @@ if (isset($_POST['reset'])) {
 
 <ul>
 <?php foreach ($_SESSION['names'] as $name): ?>
-    
+    <li><?= $name ?></li>
