@@ -16,4 +16,8 @@ if (isset($_POST['reset'])) {
 }
 ?>
 
+<form method="post">
+    <input type="text" name="prenom" placeholder="Entrez votre nom">
+    <button type="submit">Soumettre</button>
+</form>
 
