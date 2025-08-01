@@ -68,3 +68,8 @@ foreach ($_SESSION['board'] as $row) {
     <form method="post">
         <button type="submit" name="reset">Nouveau jeu</button>
     </form>
+<?php elseif ($is_draw): ?>
+    <h2>Égal !</h2>
+    <form method="post">
+        <button type="submit" name="reset">Nouveau jeu</button>
+    </form>
