@@ -9,3 +9,5 @@ if (!isset($_COOKIE[$cookie_name])) {
 
 setcookie($cookie_name, $visits, time() + (86400 * 30), "/");
 
+echo "Nombre de vues : " . $visits;
+
