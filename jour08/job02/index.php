@@ -11,3 +11,10 @@ setcookie($cookie_name, $visits, time() + (86400 * 30), "/");
 
 echo "Nombre de vues : " . $visits;
 
+if (isset($_POST['reset'])) {
+    setcookie($cookie_name, "", time() - 3600, "/");
+    header("Location: ".$_SERVER['PHP_SELF']);
+    exit;
+}
+?>
+
