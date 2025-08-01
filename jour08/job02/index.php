@@ -7,3 +7,5 @@ if (!isset($_COOKIE[$cookie_name])) {
     $visits = $_COOKIE[$cookie_name] + 1;
 }
 
+setcookie($cookie_name, $visits, time() + (86400 * 30), "/");
+
