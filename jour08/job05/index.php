@@ -63,3 +63,8 @@ foreach ($_SESSION['board'] as $row) {
 }
 ?>
 
+<?php if ($winner): ?>
+    <h2><?= $winner ?> a gagné !</h2>
+    <form method="post">
+        <button type="submit" name="reset">Nouveau jeu</button>
+    </form>
