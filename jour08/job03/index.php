@@ -5,3 +5,7 @@ if (!isset($_SESSION['names'])) {
     $_SESSION['names'] = [];
 }
 
+if (isset($_POST['prenom'])) {
+    $_SESSION['names'][] = $_POST['prenom'];
+}
+
