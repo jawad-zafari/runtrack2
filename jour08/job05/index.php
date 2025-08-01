@@ -7,4 +7,6 @@ if (!isset($_SESSION['board'])) {
         ['-', '-', '-'],
         ['-', '-', '-']
     ];
-    
+    $_SESSION['current_player'] = 'X';
+}
+
