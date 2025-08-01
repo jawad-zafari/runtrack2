@@ -73,3 +73,27 @@ foreach ($_SESSION['board'] as $row) {
     <form method="post">
         <button type="submit" name="reset">Nouveau jeu</button>
     </form>
+<?php else: ?>
+    <h2>tour<?= $_SESSION['current_player'] ?></h2>
+    <table border="1">
+        <?php for ($i = 0; $i < 3; $i++): ?>
+            <tr>
+                <?php for ($j = 0; $j < 3; $j++): ?>
+                    <td width="50" height="50" align="center">
+                        <?php if ($_SESSION['board'][$i][$j] == '-'): ?>
+                            <form method="post" style="margin:0;">
+                                <button type="submit" name="move" value="<?= $i ?>,<?= $j ?>" style="width:100%;height:100%;">-</button>
+                            </form>
+                        <?php else: ?>
+                            <?= $_SESSION['board'][$i][$j] ?>
+                        <?php endif; ?>
+                    </td>
+                <?php endfor; ?>
+            </tr>
+        <?php endfor; ?>
+    </table>
+<?php endif; ?>
+
+<form method="post" style="margin-top:20px;">
+    <button type="submit" name="reset">Réinitialiser le jeu</button>
+</form>
