@@ -19,3 +19,6 @@ if (isset($_POST['deco'])) {
         <input type="text" name="prenom" placeholder="Entrez votre nom">
         <button type="submit" name="connexion">Connexion</button>
     </form>
+<?php else: ?>
+    <p>Bonjour <?= $_COOKIE[$cookie_name] ?>!</p>
+    
