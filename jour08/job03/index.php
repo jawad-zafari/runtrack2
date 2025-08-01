@@ -21,3 +21,6 @@ if (isset($_POST['reset'])) {
     <button type="submit">Soumettre</button>
 </form>
 
+<ul>
+<?php foreach ($_SESSION['names'] as $name): ?>
+    
