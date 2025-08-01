@@ -16,3 +16,6 @@ if (isset($_POST['reset'])) {
 }
 ?>
 
+<form method="post">
+    <button type="submit" name="reset">Reset</button>
+</form>
