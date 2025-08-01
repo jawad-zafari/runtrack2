@@ -18,3 +18,10 @@ function check_winner($board) {
         }
     }
     
+// Vérifier les colonnes
+    for ($j = 0; $j < 3; $j++) {
+        if ($board[0][$j] != '-' && $board[0][$j] == $board[1][$j] && $board[1][$j] == $board[2][$j]) {
+            return $board[0][$j];
+        }
+    }
+    
