@@ -9,3 +9,11 @@ if (isset($_POST['prenom'])) {
     $_SESSION['names'][] = $_POST['prenom'];
 }
 
+if (isset($_POST['reset'])) {
+    $_SESSION['names'] = [];
+    header("Location: ".$_SERVER['PHP_SELF']);
+    exit;
+}
+?>
+
+
