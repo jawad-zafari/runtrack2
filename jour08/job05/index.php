@@ -36,3 +36,9 @@ function check_winner($board) {
     return null;
 }
 
+if (isset($_POST['reset'])) {
+    session_destroy();
+    header("Location: ".$_SERVER['PHP_SELF']);
+    exit;
+}
+
