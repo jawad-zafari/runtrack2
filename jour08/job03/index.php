@@ -27,4 +27,6 @@ if (isset($_POST['reset'])) {
 <?php endforeach; ?>
 </ul>
 
-
+<form method="post">
+    <button type="submit" name="reset">Reset</button>
+</form>
