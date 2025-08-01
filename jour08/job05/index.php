@@ -42,3 +42,14 @@ if (isset($_POST['reset'])) {
     exit;
 }
 
+if (isset($_POST['move'])) {
+    $move = explode(',', $_POST['move']);
+    $i = $move[0];
+    $j = $move[1];
+    
+    if ($_SESSION['board'][$i][$j] == '-') {
+        $_SESSION['board'][$i][$j] = $_SESSION['current_player'];
+        $_SESSION['current_player'] = ($_SESSION['current_player'] == 'X') ? 'O' : 'X';
+    }
+}
+
