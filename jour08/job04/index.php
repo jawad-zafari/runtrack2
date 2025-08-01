@@ -7,3 +7,10 @@ if (isset($_POST['prenom'])) {
     exit;
 }
 
+if (isset($_POST['deco'])) {
+    setcookie($cookie_name, "", time() - 3600, "/");
+    header("Location: ".$_SERVER['PHP_SELF']);
+    exit;
+}
+?>
+
