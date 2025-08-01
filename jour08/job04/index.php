@@ -21,4 +21,7 @@ if (isset($_POST['deco'])) {
     </form>
 <?php else: ?>
     <p>Bonjour <?= $_COOKIE[$cookie_name] ?>!</p>
-    
+    <form method="post">
+        <button type="submit" name="deco">Se déconnecter</button>
+    </form>
+<?php endif; ?>
