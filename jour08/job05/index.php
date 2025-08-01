@@ -53,3 +53,13 @@ if (isset($_POST['move'])) {
     }
 }
 
+$winner = check_winner($_SESSION['board']);
+$is_draw = true;
+foreach ($_SESSION['board'] as $row) {
+    if (in_array('-', $row)) {
+        $is_draw = false;
+        break;
+    }
+}
+?>
+
