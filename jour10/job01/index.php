@@ -7,3 +7,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+// Exécuter la requête
+$sql = "SELECT * FROM etudiants";
+$result = mysqli_query($conn, $sql);
+
