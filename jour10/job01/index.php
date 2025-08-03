@@ -10,4 +10,8 @@ if (!$conn) {
 // Exécuter la requête
 $sql = "SELECT * FROM etudiants";
 $result = mysqli_query($conn, $sql);
+// Créer un tableau HTML
+echo "<table border='1'>";
+echo "<thead><tr><th>Prénom</th><th>Nom</th><th>Naissance</th><th>Sexe</th><th>Email</th></tr></thead>";
+echo "<tbody>";
 
