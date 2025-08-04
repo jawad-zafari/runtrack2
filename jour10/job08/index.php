@@ -8,8 +8,6 @@ if (!$conn) {
 $sql = "SELECT SUM(capacite) AS capacite_totale FROM salles";
 $result = mysqli_query($conn, $sql);
 
-;
-?>
 echo "<table border='1'>";
 echo "<thead><tr><th>Capacité totale</th></tr></thead>";
 echo "<tbody>";
@@ -22,4 +20,5 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 echo "</tbody></table>";
 
-mysqli_close($conn)
+mysqli_close($conn);
+?>
