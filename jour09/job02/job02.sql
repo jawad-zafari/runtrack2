@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2025 at 04:12 PM
+-- Generation Time: Aug 04, 2025 at 11:38 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,6 +41,25 @@ CREATE TABLE `etage` (
 INSERT INTO `etage` (`id`, `nom`, `numero`, `superficie`) VALUES
 (1, 'RDC', 0, 500),
 (2, 'R+1', 1, 500);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `etages`
+--
+
+CREATE TABLE `etages` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `etages`
+--
+
+INSERT INTO `etages` (`id`, `nom`) VALUES
+(1, 'Rez-de-chaussée'),
+(2, 'Premier étage');
 
 -- --------------------------------------------------------
 
@@ -106,6 +125,12 @@ ALTER TABLE `etage`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `etages`
+--
+ALTER TABLE `etages`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `etudiants`
 --
 ALTER TABLE `etudiants`
@@ -125,6 +150,12 @@ ALTER TABLE `salles`
 -- AUTO_INCREMENT for table `etage`
 --
 ALTER TABLE `etage`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `etages`
+--
+ALTER TABLE `etages`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
