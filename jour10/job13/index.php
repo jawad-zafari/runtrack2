@@ -8,3 +8,7 @@ if (!$conn) {
 $sql = "SELECT salles.nom AS nom_salle, etages.nom AS nom_etage FROM salles JOIN etages ON salles.id_etage = etages.id";
 $result = mysqli_query($conn, $sql);
 
+echo "<table border='1'>";
+echo "<thead><tr><th>Nom de la salle</th><th>Nom de l'étage</th></tr></thead>";
+echo "<tbody>";
+
