@@ -12,3 +12,14 @@ echo "<table border='1'>";
 echo "<thead><tr><th>Nom de la salle</th><th>Nom de l'étage</th></tr></thead>";
 echo "<tbody>";
 
+while ($row = mysqli_fetch_assoc($result)) {
+    echo "<tr>";
+    echo "<td>" . $row['nom_salle'] . "</td>";
+    echo "<td>" . $row['nom_etage'] . "</td>";
+    echo "</tr>";
+}
+
+echo "</tbody></table>";
+
+mysqli_close($conn);
+?>
