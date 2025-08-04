@@ -8,3 +8,7 @@ if (!$conn) {
 $sql = "SELECT nom, capacite FROM salles";
 $result = mysqli_query($conn, $sql);
 
+echo "<table border='1'>";
+echo "<thead><tr><th>Nom</th><th>Capacité</th></tr></thead>";
+echo "<tbody>";
+
